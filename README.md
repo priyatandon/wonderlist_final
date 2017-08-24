@@ -4,7 +4,7 @@ WonderList is an android app that allows building a todo list and basic todo ite
 
 Submitted by: Priya Tandon
 
-Time spent: 20 hours spent in total
+Time spent: 24 hours spent in total
 
 ## User Stories
 
