@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Wonderlist</string>
+
+    <string name="add_item">ADD</string>
+    <string name="empty_text">There are no tasks. You can add the tasks using the edit button on top right corner.
+                               Tap the task to edit. Press it longer to delete.
+    </string>
+    <string name="edit_item_below">Edit Item Below</string>
+    <string name="save_button">SAVE</string>
+    <string name="add_new_task">Add New Task:</string>
+    <string name="task_name">Task Name</string>
+    <string name="addTaskHint">Please enter the task</string>
+    <string name="addDateHint">Click to select date</string>
+    <string name="due_date">Due Date</string>
+    <string name="priority">Priority</string>
+    <string name="status">Status</string>
+    <string name="saveButton">Save</string>
+    <string name="editDialogTitle">Edit Your Task here:</string>
+    <string name="taskNote">Task Notes</string>
+
+    <string-array name="task_priority">
+        <item>HIGH</item>
+        <item>MEDIUM</item>
+        <item>LOW</item>
+    </string-array>
+    <string-array name="task_status">
+        <item>TODO</item>
+        <item>DONE</item>
+    </string-array>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="@string/task_name"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/taskName"
+        android:id="@+id/view" />
+
+    <EditText
+        android:id="@+id/editItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_alignTop="@+id/taskName"
+        android:layout_alignBottom="@+id/view"
+        android:layout_toRightOf="@+id/taskName"
+        android:layout_toEndOf="@+id/taskName" />
+
+
+    <TextView
+        android:id="@+id/due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/taskName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/taskName"
+        android:layout_below="@+id/taskName"
+        android:layout_marginTop="30dp"
+        android:padding="16dp"
+        android:text="@string/due_date"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <EditText
+        android:id="@+id/due_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/priority"
+        android:layout_alignLeft="@+id/priority_spinner"
+        android:layout_alignStart="@+id/priority_spinner"
+        android:layout_alignTop="@+id/due_date"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_alignRight="@+id/editItem"
+        android:layout_alignEnd="@+id/editItem" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/due_date_text"/>
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/priority"
+        android:textSize="16sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/due_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/priority"
+        android:id="@+id/view2" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/status"
+        android:textSize="17sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/view2"
+        android:layout_alignRight="@+id/priority"
+        android:layout_alignEnd="@+id/priority"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/taskNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/taskNote"
+        android:textSize="17sp"
+        android:layout_marginTop="37dp"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignTop="@+id/view3"
+        android:layout_toLeftOf="@+id/taskNoteInput" />
+
+    <EditText
+        android:id="@+id/taskNoteInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please enter the task notes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/taskNote"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_alignBottom="@+id/taskNote"
+        android:layout_alignLeft="@+id/status_spinner"
+        android:layout_alignStart="@+id/status_spinner" />
+
+    <Spinner
+        android:id="@+id/priority_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/priority"
+        android:layout_alignRight="@+id/editItem"
+        android:layout_alignEnd="@+id/editItem"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_toRightOf="@+id/due_date"
+        android:layout_toEndOf="@+id/due_date"
+        />
+
+    <Spinner
+        android:id="@+id/status_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/status"
+        android:layout_alignBottom="@+id/status"
+        android:layout_alignLeft="@+id/priority_spinner"
+        android:layout_alignStart="@+id/priority_spinner"
+        android:textColor="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignBottom="@id/status_spinner"
+        android:id="@+id/view3" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignBottom="@id/taskNote"
+        android:id="@+id/view4" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:srcCompat="@mipmap/calendar2"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_alignTop="@+id/due_date_text"
+        android:layout_alignRight="@+id/due_date_text"
+        android:layout_alignEnd="@+id/due_date_text" />
+</RelativeLayout>
